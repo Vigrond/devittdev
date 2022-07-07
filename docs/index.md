@@ -1,22 +1,22 @@
+---
+hide:
+  - footer
+---
 
-# Web Development
+# Welcome to Devitt.Development
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+A **custom web development service** dedicated to bringing modern internet technology to your business.
 
-## Applications
+Services include:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- [x] Proof of Concepts
+- [x] Minimum Viable Products
+- [x] Service Modernization
+- [x] Custom Solutions
 
-## Sites
+<hr/>
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+!!! question "Would you like to know more?"
 
-## Hosting & Domains
-
-## Other Solutions
+    [ :material-magnify-plus: Explore Solutions  ](/services){ .md-button .md-button--primary }
+    [ :material-lightbulb-on: Contact ](/services){ .md-button .md-button--primary }

@@ -18,8 +18,10 @@ theme:
     #- search.highlight
     #- search.share
     - toc.integrate
+    - content.code.annotate
   font:
-    text: Roboto Flex
+    text: Red Hat Text
+    code: Roboto Mono
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
@@ -32,21 +34,40 @@ copyright: Copyright &copy; 2012 - 2022 Devitt.Development
 extra:
   generator: true
 markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
   - pymdownx.betterem
+  - pymdownx.critic
   - pymdownx.caret
+  - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - meta
+  - md_in_html
+  - tables
   #- toc:
   #    permalink: true
 nav:
-  - Web Services: 'index.md'
-  - 'tech.md'
-  - Process: 'process.md'
-  - 'philosophy.md'
+  - Welcome: 'index.md'
   - 'journal.md'
   - 'contact.md'
+  - Service:
+    - Solutions: 'services.md'
+    - 'tech.md'
+    - Process: 'process.md'
+    - 'philosophy.md'

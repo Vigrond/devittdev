@@ -1,0 +1,52 @@
+site_name: "Devitt.Development"
+theme:
+  language: en
+  icon:
+    logo: octicons/rocket-24
+  name: material
+  palette:
+    scheme: slate
+    primary: light blue
+    accent: cyan
+  features:
+    - navigation.instant
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.top
+    - navigation.sections
+    - navigation.tracking
+    #- search.highlight
+    #- search.share
+    - toc.integrate
+  font:
+    text: Roboto Flex
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+plugins:
+  #- search
+  - tags:
+      tags_file: tags.md
+copyright: Copyright &copy; 2012 - 2022 Devitt.Development
+extra:
+  generator: true
+markdown_extensions:
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - meta
+  #- toc:
+  #    permalink: true
+nav:
+  - Web Services: 'index.md'
+  - 'tech.md'
+  - Process: 'process.md'
+  - 'philosophy.md'
+  - 'journal.md'
+  - 'contact.md'

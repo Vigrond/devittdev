@@ -3,7 +3,7 @@
 
 ## Application Tech
 <hr/>
-A typical application employs the following technologies:
+A typical DD application employs the following technologies:
 
 ``` yaml
 
@@ -24,12 +24,14 @@ React.js:
 A **simplified** structure of a small application may look like the following:
 
 ``` mermaid
-graph LR
-  A[(PostgreSQL<br/>Database)] --- B{Python+Django<br/>Backend};
-  B ---|REST API| C((React.js SPA<br/>Frontend));
-  E[(3rd Party<br/>Data Source)] ---|REST API| B;
-  C --> D[End-user];
-  D --> C;
+flowchart LR
+  subgraph S1 ["Typical Small Application (Simplified)"]
+    direction LR
+    A[(PostgreSQL<br/>Database)] <--> B{Python+Django<br/>Backend};
+    B <--> C((React.js SPA<br/>Frontend));
+    E[(3rd Party<br/>Data Source)] --> B;
+    C <--> D[End-user];
+  end
 ```
 !!! question "Information Overload?  <br/>We embrace an educational philosophy ensuring our client's preferred tech understanding is accurate."
     [ :material-thought-bubble: Philosophy ](/philosophy){ .md-button .md-button--primary }

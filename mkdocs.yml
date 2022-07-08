@@ -17,7 +17,7 @@ theme:
     - navigation.tracking
     #- search.highlight
     #- search.share
-    - toc.integrate
+    # - toc.integrate
     - content.code.annotate
   font:
     text: Red Hat Text
@@ -30,7 +30,7 @@ plugins:
   #- search
   - tags:
       tags_file: tags.md
-copyright: Copyright &copy; 2012 - 2022 Devitt.Development
+copyright: Copyright &copy; 2022 Robert Devitt<br/><a href="/privacy">Data Privacy Policy</a>
 extra:
   generator: true
 markdown_extensions:
@@ -50,6 +50,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.inlinehilite
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -64,7 +66,7 @@ markdown_extensions:
   #    permalink: true
 nav:
   - Welcome: 'index.md'
-  - 'journal.md'
+  - Tech Journal: '/journal'
   - 'contact.md'
   - Service:
     - Solutions: 'services.md'

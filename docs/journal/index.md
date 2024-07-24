@@ -1,6 +1,6 @@
 # Tech Journal
 
-## `2022.07.07` First Blood
+## `2022.07.07` First Entry
 <hr/>
 
 This is my first journal entry.  My name is Robert Devitt.  I created devitt.dev
